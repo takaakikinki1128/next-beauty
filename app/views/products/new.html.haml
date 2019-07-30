@@ -17,6 +17,19 @@
       .new-form
         = f.label :画像,class:"video-label"
         = f.file_field :image
+      .new-item-form
+        = f.label :アイテム
+        %select.items-select-box{name: "item_id"}
+          %option{value: ""} ----
+          %option{value: 1} ストレートアイロン
+          %option{value: 2} コテ32mm
+          %option{value: 3} コテ28mm
+          %option{value: 4} コテ18mm
+          %option{value: 5} コテ16mm
+          %option{value: 6} ロールブラシ
+          %option{value: 7} デンマンブラシ
+          %option{value: 8} ドライヤー
+          %option{value: 9} クルクルドライヤー
 
       .actions-new
         = f.submit "SENT"
