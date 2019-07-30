@@ -13,8 +13,11 @@
     紹介文
     .lll
       = @product.text
+      
   .video-img
     = video_tag @product.video_url.to_s,loop: true, controls: true, width: 500, id: "mv" if @product.video.present?
   .img-type
     = image_tag @product.image.url,loop: true, controls: true, width: 500, id: "img" if @product.image.present?
+
+
     
