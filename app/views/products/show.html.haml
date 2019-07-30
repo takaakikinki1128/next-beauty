@@ -7,13 +7,12 @@
         = link_to '編集', "/products/#{@product.id}/edit", method: :get,class:"tweet_show-edit"
       %i.far.fa-trash-alt.show-delete-icon
         = link_to '削除', "/products/#{@product.id}", method: :delete,class:"tweet_show-delete"
-
   .show-tweet-text
     %i.fas.fa-walking.tweet-text-icon
     紹介文
     .lll
       = @product.text
-      
+      = @item.name
   .video-img
     = video_tag @product.video_url.to_s,loop: true, controls: true, width: 500, id: "mv" if @product.video.present?
   .img-type
