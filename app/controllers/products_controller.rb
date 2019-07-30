@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
 
   def create
 
+
     Product.create(product_params)
   end
 
@@ -45,6 +46,8 @@ class ProductsController < ApplicationController
   private
 
   def product_params
+
+  
     params.require(:product).permit(:style_name,:shop_name,:image,:video,:text).merge(item_id: params[:item_id],user_id: current_user.id)
   end
 
