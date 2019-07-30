@@ -1,0 +1,9 @@
+.user-show-contents
+  .nickname-label
+    = @nickname
+    さんの投稿一覧
+  .all-show-user
+    - @products.each do |product|
+      .one-show-content
+        = product.text
+          

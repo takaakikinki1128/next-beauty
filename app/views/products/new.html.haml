@@ -1,0 +1,22 @@
+.product-new-contents
+  .one-new-product
+    = form_for @product do |f|
+      %h3 掲載する
+      .new-form
+        = f.label :店名（必須）
+        = f.text_field :shop_name
+      .new-form
+        = f.label :スタイル（必須）
+        = f.text_field :style_name
+      .new-form
+        = f.label :説明文（必須）
+        = f.text_field :text
+      .new-form
+        = f.label :動画,class:"video-label"
+        = f.file_field :video
+      .new-form
+        = f.label :画像,class:"video-label"
+        = f.file_field :image
+
+      .actions-new
+        = f.submit "SENT"
