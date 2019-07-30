@@ -7,10 +7,12 @@ class ProductsController < ApplicationController
   def new 
     @product = Product.new
 
+
   end
 
   def create
-    Product.create(style_name:product_params[:style_name],shop_name:product_params[:shop_name],image:product_params[:image],video:product_params[:video],text:product_params[:text],item_id:product_params[:item_id],user_id: current_user.id)
+
+    Product.create(product_params)
   end
 
   def edit
@@ -35,8 +37,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
-    @item = Item.new
-
+    @item=Item.find(@product.item_id)
 
 
   end
@@ -44,7 +45,7 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:style_name,:shop_name,:image,:video,:text,:item_id)
+    params.require(:product).permit(:style_name,:shop_name,:image,:video,:text).merge(item_id: params[:item_id],user_id: current_user.id)
   end
 
   def move_to_index
