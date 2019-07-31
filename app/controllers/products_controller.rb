@@ -38,7 +38,9 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
-    @item=Item.find(@product.item_id)
+    @item = Item.find(@product.item_id)
+    @color = Color.find(@product.color_id)
+    @perm = Perm.find(@product.perm_id)
 
 
   end
@@ -48,7 +50,7 @@ class ProductsController < ApplicationController
   def product_params
 
   
-    params.require(:product).permit(:style_name,:shop_name,:image,:video,:text).merge(item_id: params[:item_id],user_id: current_user.id)
+    params.require(:product).permit(:style_name,:shop_name,:image,:video,:text,:stylest_name).merge(color_id:params[:color_id],perm_id:params[:perm_id],item_id: params[:item_id],user_id: current_user.id)
   end
 
   def move_to_index
