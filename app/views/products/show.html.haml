@@ -13,6 +13,9 @@
     .lll
       = @product.text
       = @item.name
+      = @product.stylest_name 
+      = @color.name 
+      = @perm.name 
   .video-img
     = video_tag @product.video_url.to_s,loop: true, controls: true, width: 500, id: "mv" if @product.video.present?
   .img-type
