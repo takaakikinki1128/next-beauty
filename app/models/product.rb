@@ -5,5 +5,12 @@ class Product < ApplicationRecord
   has_one :item
   has_one :color
   has_one :perm
+  validates :text, presence: true
+  validates :style_name, presence: true
+  validates :shop_name, presence: true
+  validates :stylest_name, presence: true
+  
+
+
 
 end

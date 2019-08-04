@@ -1,2 +1,0 @@
-class Cosme < ApplicationRecord
-end

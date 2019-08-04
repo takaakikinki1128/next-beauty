@@ -8,10 +8,8 @@
       
       = link_to '詳細', "/products/#{product.id}", method: :get,class:"contents-btn"
       - if user_signed_in? && current_user.id == product.user_id
-        %i.far.fa-edit.edit-icon
-          = link_to '編集', "/products/#{product.id}/edit", method: :get,class:"contents-btn"
-        %i.far.fa-trash-alt.delete-icon
-          = link_to '削除', "/products/#{product.id}", method: :delete,class:"contents-btn"
+        = link_to '編集', "/products/#{product.id}/edit", method: :get,class:"contents-btn"
+        = link_to '削除', "/products/#{product.id}", method: :delete,class:"contents-btn"
       .video-index
         = video_tag product.video_url.to_s,loop: true, controls: true, width: 300,class:"mv" if product.video.present?
       .img-index

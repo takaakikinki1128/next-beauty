@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
 
   def new 
     @product = Product.new
-
+    
 
   end
 
@@ -24,7 +24,7 @@ class ProductsController < ApplicationController
   def update
     product = Product.find(params[:id])
     if product.user_id == current_user.id
-      product.update(style_name:product_params[:style_name],shop_name:product_params[:shop_name],image:product_params[:image],video:product_params[:video],text:product_params[:text],item_id:product_params[:item_id],user_id: current_user.id)
+      product.update(style_name:product_params[:style_name],shop_name:product_params[:shop_name],image:product_params[:image],video:product_params[:video],text:product_params[:text],item_id:product_params[:item_id],cosme:product_params[:cosme],user_id: current_user.id)
     end
   end
 
@@ -50,7 +50,7 @@ class ProductsController < ApplicationController
   def product_params
 
   
-    params.require(:product).permit(:style_name,:shop_name,:image,:video,:text,:stylest_name).merge(color_id:params[:color_id],perm_id:params[:perm_id],item_id: params[:item_id],user_id: current_user.id)
+    params.require(:product).permit(:style_name,:shop_name,:image,:video,:text,:stylest_name,:cosme).merge(color_id:params[:color_id],perm_id:params[:perm_id],item_id: params[:item_id],user_id: current_user.id)
   end
 
   def move_to_index
