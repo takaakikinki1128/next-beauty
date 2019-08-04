@@ -1,17 +1,14 @@
 .show-product-contents
   .show-tweet-name
-    %i.far.fa-user.show-user-icon
-      = link_to @product.user.nickname,"/users/#{@product.user.id}",class:"tweet-user_name"
+    = link_to @product.user.nickname,"/users/#{@product.user.id}",class:"tweet-user_name"
     - if user_signed_in? && current_user.id == @product.user_id
-      %i.far.fa-edit.show-edit-icon
-        = link_to '編集', "/products/#{@product.id}/edit", method: :get,class:"tweet_show-edit"
-      %i.far.fa-trash-alt.show-delete-icon
-        = link_to '削除', "/products/#{@product.id}", method: :delete,class:"tweet_show-delete"
+      = link_to '編集', "/products/#{@product.id}/edit", method: :get,class:"tweet_show-edit"
+      = link_to '削除', "/products/#{@product.id}", method: :delete,class:"tweet_show-delete"
   .show-tweet-text
-    %i.fas.fa-walking.tweet-text-icon
     紹介文
     .lll
       = @product.text
+      = @product.cosme
       = @item.name
       = @product.stylest_name 
       = @color.name 
