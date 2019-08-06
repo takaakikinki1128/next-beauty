@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_04_053254) do
+ActiveRecord::Schema.define(version: 2019_08_04_074532) do
 
   create_table "colors", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -46,15 +46,26 @@ ActiveRecord::Schema.define(version: 2019_08_04_053254) do
     t.string "video"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "style_name"
     t.string "shop_name"
     t.integer "user_id"
     t.integer "item_id"
     t.integer "color_id"
     t.integer "perm_id"
-    t.integer "cosme_id"
     t.string "stylest_name"
     t.string "cosme"
+    t.integer "stylegenre_id"
+  end
+
+  create_table "stylegenres", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stylenames", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

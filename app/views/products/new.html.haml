@@ -6,9 +6,6 @@
         = f.label :店名（必須）
         = f.text_field :shop_name
       .new-form
-        = f.label :スタイル（必須）
-        = f.text_field :style_name
-      .new-form
         = f.label :説明文（必須）
         = f.text_field :text
       .new-form
@@ -23,7 +20,17 @@
       .new-form
         = f.label :コスメ,class:"video-label"
         = f.text_field :cosme
-
+      .new-item-form
+        = f.label :スタイル
+        %select.stylename-select-box{name: "stylegenre_id"}
+          %option{value: ""} ----
+          %option{value: 1} ボブ
+          %option{value: 2} ショート
+          %option{value: 3} ミディアム
+          %option{value: 4} セミロング
+          %option{value: 5} ロング
+          %option{value: 6} スーパーロング
+          %option{value: 7} ヘアセット
       .new-item-form
         = f.label :アイテム
         %select.items-select-box{name: "item_id"}
