@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.includes(:user).order("created_at DESC")    
+    # @products = Product.includes(:user).order("created_at DESC")    
 
     @bob_style =  Product.where(stylegenre_id: 1).order("id DESC").limit(4)
     @short_style = Product.where(stylegenre_id: 2).order("id DESC").limit(4)
@@ -9,6 +9,8 @@ class ProductsController < ApplicationController
     @long_style = Product.where(stylegenre_id: 5).order("id DESC").limit(4)
     @superlong_style = Product.where(stylegenre_id: 6).order("id DESC").limit(4)
     @hairset_style = Product.where(stylegenre_id: 7).order("id DESC").limit(4)
+
+    @stylegenres = Product.all.order("created_at DESC")
     
   end
 

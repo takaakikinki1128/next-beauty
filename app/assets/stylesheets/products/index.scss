@@ -1,0 +1,42 @@
+.pickup-contents{
+  background: #f2f4f8;
+  height:250vh;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  .pickup-title{
+    text-align: center;
+    .top-title{
+      font-size:35px;
+      padding-top:10px;
+    }
+  }
+  .genres-link{
+    text-align: center;
+    font-size:25px;
+    .bob-style{
+      padding-top:20px;
+    }
+    .short-style{
+      padding-top:20px;
+    }
+    .mid-style{
+      padding-top:20px;
+    }
+    .semlong-style{
+      padding-top:20px;
+    }
+    .long-style{
+      padding-top:20px;
+    }
+    .superlong-style{
+      padding-top:20px;
+    }
+    .hairset-style{
+      padding-top:20px;
+    }
+    .stylename{
+      font-size:18px;
+
+    }
+  }
+}

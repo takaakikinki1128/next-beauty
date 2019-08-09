@@ -1,59 +1,45 @@
-.product-new-contents{
+.edit-contents{
   background: #f2f4f8;
   height:100vh;
   width: 100%;
-  .one-new-product{
+  .edit-one{
     text-align: center;
     padding-top:20px;
     h3{
       font-size:25px;
     }
-    .new-form{
+    .edit-form{
       padding-top:20px;
-      .text-box{
+      .edit-text-box{
         width:200px;
         height:30px;
         font-size:20px;
       }
-      .form-label{
+      .edit-label{
         font-size:20px;
       }
-      .out-label{
-        font-size:20px;
-      }
-      .video-form{
-        display: inline;
+      .video-edit{
+        display:inline;
         padding-left:30px;
       }
-      .video-label{
-        font-size:20px;
-      }
     }
-    .new-item-form{
+    .edit-item-form{
       padding-top:20px;
-      .select-label{
+      .edit-select-label{
         font-size:20px;
       }
-      .stylename-select-box{
+      .edit-stylename-select-box{
         height:30px;
         width:100px;
       }
-      .items-select-box{
-        height:30px;
-        width:100px;
-      }
-      .items-select-box{
-        height:30px;
-        width:100px;
-      }
-      .items-select-box{
+      .edit-items-select-box{
         height:30px;
         width:100px;
       }
     }
-    .actions-new{
+    .actions-edits{
       padding-top:40px;
-      .sent-btn{
+      .btn_edit{
         width:100px;
         height:30px;
       }

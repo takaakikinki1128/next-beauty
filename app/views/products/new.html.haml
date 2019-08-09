@@ -3,22 +3,22 @@
     = form_for @product do |f|
       %h3 掲載する
       .new-form
-        = f.label :店名（必須）
-        = f.text_field :shop_name
+        = f.label :店名（必須）,class:"out-label"
+        = f.text_field :shop_name,class:"text-box"
       .new-form
-        = f.label :説明文（必須）
-        = f.text_field :text
+        = f.label :説明文（必須）,class:"form-label"
+        = f.text_field :text,class:"text-box"
       .new-form
         = f.label :動画,class:"video-label"
-        = f.file_field :video
+        = f.file_field :video,class:"video-form"
       .new-form
-        = f.label :スタイリスト名,class:"video-label"
-        = f.text_field :stylest_name
+        = f.label :スタイリスト名,class:"form-label"
+        = f.text_field :stylest_name,class:"text-box"
       .new-form
-        = f.label :コスメ,class:"video-label"
-        = f.text_field :cosme
+        = f.label :コスメ,class:"out-label"
+        = f.text_field :cosme,class:"text-box"
       .new-item-form
-        = f.label :スタイル
+        = f.label :スタイル,class:"select-label"
         %select.stylename-select-box{name: "stylegenre_id"}
           %option{value: ""} ----
           %option{value: 1} ボブ
@@ -29,7 +29,7 @@
           %option{value: 6} スーパーロング
           %option{value: 7} ヘアセット
       .new-item-form
-        = f.label :アイテム
+        = f.label :アイテム,class:"select-label"
         %select.items-select-box{name: "item_id"}
           %option{value: ""} ----
           %option{value: 1} ストレートアイロン
@@ -45,7 +45,7 @@
           %option{value: 11} ヘアゴム         
           %option{value: 12} なし 
       .new-item-form
-        = f.label :カラー
+        = f.label :カラー,class:"select-label"
         %select.items-select-box{name: "color_id"}
           %option{value: ""} ----
           %option{value: 1} 12LV；アッシュ系
@@ -80,13 +80,11 @@
           %option{value: 30} 6LV；マット系
           %option{value: 31} なし
       .new-item-form
-        = f.label :パーマ
+        = f.label :パーマ,class:"select-label"
         %select.items-select-box{name: "perm_id"}
           %option{value: ""} ----
           %option{value: 1} ホットパーマ(デジパなど)
           %option{value: 2} コールドパーマ(水パなど)
           %option{value: 3} なし
-
-
       .actions-new
-        = f.submit "SENT"
+        = f.submit "SENT",class:"sent-btn"

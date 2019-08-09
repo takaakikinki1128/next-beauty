@@ -1,0 +1,2 @@
+module StylegenresHelper
+end
