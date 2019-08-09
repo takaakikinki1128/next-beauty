@@ -5,43 +5,48 @@
     ボブスタイル
   .bob-contents
     - @bob_style.each do |style|
-      = image_tag style.image.url,width: 200
       = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
-      = link_to product_path(style.id) 
+      = link_to '詳細',"/products/#{style.id}"
   .short-style
     ショートスタイル
   .short-contents
     - @short_style.each do |style|
-      = image_tag style.image.url,width: 200
       = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
+      = link_to '詳細',"/products/#{style.id}"
+
   .mid-style
     ミディアムスタイル
   .mid-contents
     - @mid_style.each do |style|
-      = image_tag style.image.url,width: 200
-      = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
+      = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv"
+      = link_to '詳細',"/products/#{style.id}"
+ 
   .semlong-style
     セミロングスタイル
   .semlong-contents
     - @semlong_style.each do |style|
-      = image_tag style.image.url,width: 200
       = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
+      = link_to '詳細',"/products/#{style.id}"
+
   .long-style
     ロングスタイル
   .long-contents
     - @long_style.each do |style|
-      = image_tag style.image.url,width: 200
       = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
+      = link_to '詳細',"/products/#{style.id}"
+
   .superlong-style
     スーパーロングスタイル
   .superlong-contents
     - @superlong_style.each do |style|
-      = image_tag style.image.url,width: 200
       = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
+      = link_to '詳細',"/products/#{style.id}"
+
   .hairset-style
     ヘアセットスタイル
   .hairset-contents
     - @hairset_style.each do |style|
-      = image_tag style.image.url,width: 200
       = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
+      = link_to '詳細',"/products/#{style.id}"
+
   
