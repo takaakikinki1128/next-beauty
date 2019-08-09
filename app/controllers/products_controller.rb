@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.includes(:user).page(params[:page]).per(5).order("created_at DESC")    
+    @products = Product.includes(:user).order("created_at DESC")    
 
     @bob_style =  Product.where(stylegenre_id: 1).order("id DESC").limit(4)
     @short_style = Product.where(stylegenre_id: 2).order("id DESC").limit(4)
@@ -30,7 +30,7 @@ class ProductsController < ApplicationController
   def update
     product = Product.find(params[:id])
     if product.user_id == current_user.id
-      product.update(shop_name:product_params[:shop_name],image:product_params[:image],video:product_params[:video],text:product_params[:text],item_id:product_params[:item_id],cosme:product_params[:cosme],user_id: current_user.id)
+      product.update(shop_name:product_params[:shop_name],video:product_params[:video],text:product_params[:text],item_id:product_params[:item_id],cosme:product_params[:cosme],stylegenre_id:params[:stylegenre_id],color_id:params[:color_id],perm_id:params[:perm_id],user_id: current_user.id)
     end
   end
 
@@ -55,7 +55,7 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:shop_name,:image,:video,:text,:stylest_name,:cosme).merge(stylegenre_id:params[:stylegenre_id],color_id:params[:color_id],perm_id:params[:perm_id],item_id: params[:item_id],user_id: current_user.id)
+    params.require(:product).permit(:shop_name,:video,:text,:stylest_name,:cosme).merge(stylegenre_id:params[:stylegenre_id],color_id:params[:color_id],perm_id:params[:perm_id],item_id: params[:item_id],user_id: current_user.id)
   end
 
   def move_to_index
