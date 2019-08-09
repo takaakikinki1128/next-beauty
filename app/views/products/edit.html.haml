@@ -2,24 +2,24 @@
   = form_for  @product do |f|
     .edit-one
       %h3 編集する
-      .new-form
-        = f.label :店名（必須）
-        = f.text_field :shop_name
-      .new-form
-        = f.label :説明文（必須）
-        = f.text_field :text
-      .new-form
-        = f.label :動画,class:"video-label"
-        = f.file_field :video
-      .new-form
-        = f.label :スタイリスト名,class:"video-label"
-        = f.text_field :stylest_name
-      .new-form
-        = f.label :コスメ,class:"video-label"
-        = f.text_field :cosme
-      .new-item-form
-        = f.label :スタイル
-        %select.stylename-select-box{name: "stylegenre_id"}
+      .edit-form
+        = f.label :店名（必須）,class:"edit-label"
+        = f.text_field :shop_name,class:"edit-text-box"
+      .edit-form
+        = f.label :説明文（必須）,class:"edit-label"
+        = f.text_field :text,class:"edit-text-box"
+      .edit-form
+        = f.label :動画,class:"edit-label"
+        = f.file_field :video,class:"video-edit"
+      .edit-form
+        = f.label :スタイリスト名,class:"edit-label"
+        = f.text_field :stylest_name,class:"edit-text-box"
+      .edit-form
+        = f.label :コスメ,class:"edit-label"
+        = f.text_field :cosme,class:"edit-text-box"
+      .edit-item-form
+        = f.label :スタイル,class:"edit-select-label"
+        %select.edit-stylename-select-box{name: "stylegenre_id"}
           %option{value: ""} ----
           %option{value: 1} ボブ
           %option{value: 2} ショート
@@ -28,9 +28,9 @@
           %option{value: 5} ロング
           %option{value: 6} スーパーロング
           %option{value: 7} ヘアセット
-      .new-item-form
-        = f.label :アイテム
-        %select.items-select-box{name: "item_id"}
+      .edit-item-form
+        = f.label :アイテム,class:"edit-select-label"
+        %select.edit-items-select-box{name: "item_id"}
           %option{value: ""} ----
           %option{value: 1} ストレートアイロン
           %option{value: 2} コテ32mm
@@ -44,9 +44,9 @@
           %option{value: 10} Uピンorアメピン
           %option{value: 11} ヘアゴム         
           %option{value: 12} なし 
-      .new-item-form
-        = f.label :カラー
-        %select.items-select-box{name: "color_id"}
+      .edit-item-form
+        = f.label :カラー,class:"edit-select-label"
+        %select.edit-items-select-box{name: "color_id"}
           %option{value: ""} ----
           %option{value: 1} 12LV；アッシュ系
           %option{value: 2} 10LV；アッシュ系
@@ -79,14 +79,12 @@
           %option{value: 29} 8LV；マット系
           %option{value: 30} 6LV；マット系
           %option{value: 31} なし
-      .new-item-form
-        = f.label :パーマ
-        %select.items-select-box{name: "perm_id"}
+      .edit-item-form
+        = f.label :パーマ,class:"edit-select-label"
+        %select.edit-items-select-box{name: "perm_id"}
           %option{value: ""} ----
           %option{value: 1} ホットパーマ(デジパなど)
           %option{value: 2} コールドパーマ(水パなど)
           %option{value: 3} なし
-
-
       .actions-edits
         = f.submit "SENT",class:"btn_edit"
