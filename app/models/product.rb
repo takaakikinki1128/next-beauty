@@ -9,7 +9,8 @@ class Product < ApplicationRecord
   validates :text, presence: true
   validates :shop_name, presence: true
   validates :stylest_name, presence: true
-  
+  validates :video, presence: true
+
 
 
 
