@@ -5,20 +5,24 @@
       .new-form
         = f.label :店名（必須）,class:"out-label"
         = f.text_field :shop_name,class:"text-box"
+      .error-new-1
       .new-form
         = f.label :説明文（必須）,class:"form-label"
         = f.text_field :text,class:"text-box"
+      .error-new-2
       .new-form
-        = f.label :動画,class:"video-label"
+        = f.label :動画（必須）,class:"video-label"
         = f.file_field :video,class:"video-form"
+      .error-new-3
       .new-form
-        = f.label :スタイリスト名,class:"form-label"
+        = f.label :スタイリスト名（必須）,class:"form-label"
         = f.text_field :stylest_name,class:"text-box"
+      .error-new-4
       .new-form
         = f.label :コスメ,class:"out-label"
         = f.text_field :cosme,class:"text-box"
       .new-item-form
-        = f.label :スタイル,class:"select-label"
+        = f.label :スタイル（必須）,class:"select-label"
         %select.stylename-select-box{name: "stylegenre_id"}
           %option{value: ""} ----
           %option{value: 1} ボブ
@@ -28,8 +32,9 @@
           %option{value: 5} ロング
           %option{value: 6} スーパーロング
           %option{value: 7} ヘアセット
+      .error-new-5
       .new-item-form
-        = f.label :アイテム,class:"select-label"
+        = f.label :アイテム（必須）,class:"select-label"
         %select.items-select-box{name: "item_id"}
           %option{value: ""} ----
           %option{value: 1} ストレートアイロン
@@ -44,8 +49,9 @@
           %option{value: 10} Uピンorアメピン
           %option{value: 11} ヘアゴム         
           %option{value: 12} なし 
+      .error-new-6
       .new-item-form
-        = f.label :カラー,class:"select-label"
+        = f.label :カラー（必須）,class:"select-label"
         %select.items-select-box{name: "color_id"}
           %option{value: ""} ----
           %option{value: 1} 12LV；アッシュ系
@@ -79,12 +85,14 @@
           %option{value: 29} 8LV；マット系
           %option{value: 30} 6LV；マット系
           %option{value: 31} なし
+      .error-new-7
       .new-item-form
-        = f.label :パーマ,class:"select-label"
+        = f.label :パーマ（必須）,class:"select-label"
         %select.items-select-box{name: "perm_id"}
           %option{value: ""} ----
           %option{value: 1} ホットパーマ(デジパなど)
           %option{value: 2} コールドパーマ(水パなど)
           %option{value: 3} なし
+      .error-new-8
       .actions-new
         = f.submit "SENT",class:"sent-btn"
