@@ -9,16 +9,16 @@
         = f.label :説明文（必須）,class:"edit-label"
         = f.text_field :text,class:"edit-text-box"
       .edit-form
-        = f.label :動画,class:"edit-label"
+        = f.label :動画（必須）,class:"edit-label"
         = f.file_field :video,class:"video-edit"
       .edit-form
-        = f.label :スタイリスト名,class:"edit-label"
+        = f.label :スタイリスト名（必須）,class:"edit-label"
         = f.text_field :stylest_name,class:"edit-text-box"
       .edit-form
         = f.label :コスメ,class:"edit-label"
         = f.text_field :cosme,class:"edit-text-box"
       .edit-item-form
-        = f.label :スタイル,class:"edit-select-label"
+        = f.label :スタイル（必須）,class:"edit-select-label"
         %select.edit-stylename-select-box{name: "stylegenre_id"}
           %option{value: ""} ----
           %option{value: 1} ボブ
@@ -29,7 +29,7 @@
           %option{value: 6} スーパーロング
           %option{value: 7} ヘアセット
       .edit-item-form
-        = f.label :アイテム,class:"edit-select-label"
+        = f.label :アイテム（必須）,class:"edit-select-label"
         %select.edit-items-select-box{name: "item_id"}
           %option{value: ""} ----
           %option{value: 1} ストレートアイロン
@@ -45,7 +45,7 @@
           %option{value: 11} ヘアゴム         
           %option{value: 12} なし 
       .edit-item-form
-        = f.label :カラー,class:"edit-select-label"
+        = f.label :カラー（必須）,class:"edit-select-label"
         %select.edit-items-select-box{name: "color_id"}
           %option{value: ""} ----
           %option{value: 1} 12LV；アッシュ系
@@ -80,7 +80,7 @@
           %option{value: 30} 6LV；マット系
           %option{value: 31} なし
       .edit-item-form
-        = f.label :パーマ,class:"edit-select-label"
+        = f.label :パーマ（必須）,class:"edit-select-label"
         %select.edit-items-select-box{name: "perm_id"}
           %option{value: ""} ----
           %option{value: 1} ホットパーマ(デジパなど)
