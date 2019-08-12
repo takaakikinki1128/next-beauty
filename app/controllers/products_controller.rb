@@ -22,6 +22,8 @@ class ProductsController < ApplicationController
 
   def create
     Product.create(product_params)
+    redirect_to root_path
+
   end
 
   def edit
@@ -34,6 +36,7 @@ class ProductsController < ApplicationController
     if product.user_id == current_user.id
       product.update(shop_name:product_params[:shop_name],video:product_params[:video],text:product_params[:text],item_id:product_params[:item_id],cosme:product_params[:cosme],stylegenre_id:params[:stylegenre_id],color_id:params[:color_id],perm_id:params[:perm_id],user_id: current_user.id)
     end
+    redirect_to root_path
   end
 
   def destroy

@@ -3,7 +3,10 @@
     = @nickname
     さんの投稿一覧
   .all-show-user
-    - @products.each do |product|
+    - @products.each do |product,|
       .one-show-content
-        = product.text
-          
+        .shop_name_contents
+          店名：
+          = product.shop_name
+        .video-user-show
+          = video_tag product.video_url.to_s,loop: true, controls: true, width: 300,class:"mv" 
