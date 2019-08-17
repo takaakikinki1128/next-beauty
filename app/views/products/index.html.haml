@@ -4,43 +4,43 @@
       ピックアップスタイル
   .genres-link
     .bob-style
-      = link_to "ボブ",stylegenres_path
+      ボブ
       .bob-contents
         - @bob_style.each do |style|
           = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
           = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .short-style
-      = link_to "ショート",stylegenres_path
+      ショート
       .short-contents
         - @short_style.each do |style|
           = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
           = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .mid-style
-      = link_to "ミディアム",stylegenres_path
+      ミディアム
       .mid-contents
         - @mid_style.each do |style|
           = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv"
           = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .semlong-style
-      = link_to "セミロング",stylegenres_path
+      セミロング
       .semlong-contents
         - @semlong_style.each do |style|
           = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
           = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .long-style
-      = link_to "ロング",stylegenres_path
+      ロング
       .long-contents
         - @long_style.each do |style|
           = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
           = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .superlong-style
-      = link_to "スーパーロング",stylegenres_path
+      スーパーロング
       .superlong-contents
         - @superlong_style.each do |style|
           = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
           = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .hairset-style
-      = link_to "ヘアセット",stylegenres_path
+      ヘアセット
     .hairset-contents
       - @hairset_style.each do |style|
         = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 

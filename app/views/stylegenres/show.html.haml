@@ -1,1 +1,9 @@
-aaa
+.user-show-contents
+  .all-show-user
+    - @products.each do |product|
+      .one-show-content
+        .shop_name_contents
+          スタイル：
+          = product.
+        .video-user-show
+          = video_tag product.video_url.to_s,loop: true, controls: true, width: 300,class:"mv" 
