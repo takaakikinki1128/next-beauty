@@ -15,8 +15,8 @@
         = link_to "マイページ","/users/#{current_user.id}", method: :get,class:"header-link"
         = link_to "掲載する" ,"/products/new", method: :get,class:"header-link"
         = link_to "ログアウト" ,destroy_user_session_path, method: :delete,class:"header-link"
-        -# = link_to "カテゴリー検索" ,categories_path,class:"category_search"
-        -# = link_to "ユーザー検索",search_users_path,class:"user_search"
+        = link_to "スタイル検索" ,search_stylegenres_path,class:"header-link"
+        = link_to "ユーザー検索",search_users_path,class:"header-link"
       - else
         = link_to "ログイン",new_user_session_path,class:"log-btn"
         = link_to "新規登録",new_user_registration_path,class:"log-btn"
