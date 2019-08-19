@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     end
   end
   resources :items, only: [:create]
-  # resources :stylegenres,  only:[:show,:index] do 
+  resources :stylegenres,  only:[:show]  
     
 
 

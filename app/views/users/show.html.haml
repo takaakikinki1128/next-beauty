@@ -10,3 +10,13 @@
           = product.shop_name
         .video-user-show
           = video_tag product.video_url.to_s,loop: true, controls: true, width: 300,class:"mv" 
+        - if user_signed_in? && current_user.id == product.user.id
+          %i.far.fa-clipboard.show-second-icon
+            = link_to "詳細", "/products/#{product.id}", method: :get,class:"show-btn"
+          %i.far.fa-edit.show-edit-icon
+            = link_to '編集', "/products/#{product.id}/edit", method: :get,class:"show-btn"
+          %i.far.fa-trash-alt.show-delete-icon
+            = link_to '削除', "/products/#{product.id}", method: :delete,class:"show-btn"
+        - else
+          %i.far.fa-clipboard.show-second-icon
+            = link_to "詳細", "/products/#{product.id}", method: :get,class:"show-btn"
