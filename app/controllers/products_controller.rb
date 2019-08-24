@@ -53,7 +53,10 @@ class ProductsController < ApplicationController
     @color = Color.find(@product.color_id)
     @perm = Perm.find(@product.perm_id)
     @stylegenre = Stylegenre.find(@product.stylegenre_id)
+  end
 
+  def search
+    @products = Product.all
 
   end
 
