@@ -56,7 +56,7 @@ class ProductsController < ApplicationController
   end
 
   def search
-    @products = Product.all
+    @products = Product.includes(:user).page(params[:page]).per(9).order("created_at DESC")
 
   end
 
