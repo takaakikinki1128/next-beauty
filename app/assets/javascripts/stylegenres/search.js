@@ -1,9 +1,9 @@
 $(function() {
 
   var style_list = $('.search-style');
-  function appendStyle(style){
+  function appendStyle(genre){
     var html = `<li>
-                  <a class="style_name-search" href="/stylegenres/${style.id}">${style.name}</a>
+                  <a class="style_name-search" href="/stylegenres/${genre.id}">${genre.name}</a>
                 </li>`
     style_list.append(html)
   }
@@ -20,9 +20,9 @@ $(function() {
         data: { keyword: input },
         dataType: 'json'
       })
-      .done(function(styles) {
-        styles.forEach(function(style){
-          appendStyle(style);
+      .done(function(genres) {
+        genres.forEach(function(genre){
+          appendStyle(genre);
         });
       })
 
@@ -31,5 +31,16 @@ $(function() {
       })
     }
   });
+
+  $(document).on({"mouseenter":function(){
+    $(this).css('color','blue')
+    $(this).stop().animate({'font-size':'30px'}, 250);
+
+  },"mouseleave": function(){
+    $(this).css('color','black')
+    $(this).stop().animate({'font-size':'25px'}, 250);
+
+  }},".style_name-search")
+    
   
 });

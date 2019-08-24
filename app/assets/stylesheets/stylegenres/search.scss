@@ -1,0 +1,25 @@
+.search-style-contents{
+  background: #f2f4f8;
+  height:150vh;
+  width: 100%;
+  .form_style-content{
+    text-align: center;
+    padding-top:100px;
+    .search-form_style_input{
+      width:300px;
+      height:40px;
+      font-size:20px;
+    }
+  }
+  .search-style{
+    text-align: center;
+    padding-top:20px;
+    list-style: none;
+    a{
+      color:black;
+      font-size:25px;
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration: none;
+    }
+  }
+}

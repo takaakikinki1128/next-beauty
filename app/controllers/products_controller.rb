@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+    before_action :move_to_index, except: [:index,:show]
+
   def index
     # @products = Product.includes(:user).order("created_at DESC")    
 
@@ -10,7 +12,7 @@ class ProductsController < ApplicationController
     @superlong_style = Product.where(stylegenre_id: 6).order("id DESC").limit(3)
     @hairset_style = Product.where(stylegenre_id: 7).order("id DESC").limit(3)
 
-    @stylegenres = Product.all.order("created_at DESC")
+    # @stylegenres = Product.all.order("created_at DESC")
     
   end
 
