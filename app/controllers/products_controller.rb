@@ -2,13 +2,13 @@ class ProductsController < ApplicationController
   def index
     # @products = Product.includes(:user).order("created_at DESC")    
 
-    @bob_style =  Product.where(stylegenre_id: 1).order("id DESC").limit(4)
-    @short_style = Product.where(stylegenre_id: 2).order("id DESC").limit(4)
-    @mid_style = Product.where(stylegenre_id: 3).order("id DESC").limit(4)
-    @semlong_style = Product.where(stylegenre_id: 4).order("id DESC").limit(4)
-    @long_style = Product.where(stylegenre_id: 5).order("id DESC").limit(4)
-    @superlong_style = Product.where(stylegenre_id: 6).order("id DESC").limit(4)
-    @hairset_style = Product.where(stylegenre_id: 7).order("id DESC").limit(4)
+    @bob_style =  Product.where(stylegenre_id: 1).order("id DESC").limit(3)
+    @short_style = Product.where(stylegenre_id: 2).order("id DESC").limit(3)
+    @mid_style = Product.where(stylegenre_id: 3).order("id DESC").limit(3)
+    @semlong_style = Product.where(stylegenre_id: 4).order("id DESC").limit(3)
+    @long_style = Product.where(stylegenre_id: 5).order("id DESC").limit(3)
+    @superlong_style = Product.where(stylegenre_id: 6).order("id DESC").limit(3)
+    @hairset_style = Product.where(stylegenre_id: 7).order("id DESC").limit(3)
 
     @stylegenres = Product.all.order("created_at DESC")
     

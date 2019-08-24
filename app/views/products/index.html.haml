@@ -5,45 +5,87 @@
   .genres-link
     .bob-style
       ボブ
-      .bob-contents
-        - @bob_style.each do |style|
-          = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
-          = link_to '詳細',"/products/#{style.id}",class:"stylename"
+    .bob-contents
+      - @bob_style.each do |style|
+        .one-index-contents
+          .shop_name-index
+            店名：
+            = style.shop_name
+          .video-index-product
+            = video_tag style.video_url.to_s,loop: true, controls: true, width: 300,class:"mv"
+          %i.far.fa-clipboard.index-icon
+            = link_to '詳細',"/products/#{style.id}"
     .short-style
       ショート
-      .short-contents
-        - @short_style.each do |style|
-          = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
-          = link_to '詳細',"/products/#{style.id}",class:"stylename"
+    .short-contents
+      - @short_style.each do |style|
+        .one-index-contents
+          .shop_name-index
+            店名：
+            = style.shop_name
+          .video-index-product
+            = video_tag style.video_url.to_s,loop: true, controls: true, width: 300,class:"mv"
+          %i.far.fa-clipboard.index-icon
+            = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .mid-style
       ミディアム
-      .mid-contents
-        - @mid_style.each do |style|
-          = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv"
-          = link_to '詳細',"/products/#{style.id}",class:"stylename"
+    .mid-contents
+      - @mid_style.each do |style|
+        .one-index-contents
+          .shop_name-index
+            店名：
+            = style.shop_name
+          .video-index-product
+            = video_tag style.video_url.to_s,loop: true, controls: true, width: 300,class:"mv"
+          %i.far.fa-clipboard.index-icon
+            = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .semlong-style
       セミロング
-      .semlong-contents
-        - @semlong_style.each do |style|
-          = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
-          = link_to '詳細',"/products/#{style.id}",class:"stylename"
+    .semlong-contents
+      - @semlong_style.each do |style|
+        .one-index-contents
+          .shop_name-index
+            店名：
+            = style.shop_name
+          .video-index-product
+            = video_tag style.video_url.to_s,loop: true, controls: true, width: 300,class:"mv"
+          %i.far.fa-clipboard.index-icon
+            = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .long-style
       ロング
-      .long-contents
-        - @long_style.each do |style|
-          = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
-          = link_to '詳細',"/products/#{style.id}",class:"stylename"
+    .long-contents
+      - @long_style.each do |style|
+        .one-index-contents
+          .shop_name-index
+            店名：
+            = style.shop_name
+          .video-index-product
+            = video_tag style.video_url.to_s,loop: true, controls: true, width: 300,class:"mv"
+          %i.far.fa-clipboard.index-icon
+            = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .superlong-style
       スーパーロング
-      .superlong-contents
-        - @superlong_style.each do |style|
-          = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
-          = link_to '詳細',"/products/#{style.id}",class:"stylename"
+    .superlong-contents
+      - @superlong_style.each do |style|
+        .one-index-contents
+          .shop_name-index
+            店名：
+            = style.shop_name
+          .video-index-product
+            = video_tag style.video_url.to_s,loop: true, controls: true, width: 300,class:"mv"
+          %i.far.fa-clipboard.index-icon
+            = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .hairset-style
       ヘアセット
     .hairset-contents
       - @hairset_style.each do |style|
-        = video_tag style.video_url.to_s,loop: true, controls: true, width: 250,class:"mv" 
-        = link_to '詳細',"/products/#{style.id}",class:"stylename"
+        .one-index-contents
+          .shop_name-index
+            店名：
+            = style.shop_name
+          .video-index-product
+            = video_tag style.video_url.to_s,loop: true, controls: true, width: 300,class:"mv"
+          %i.far.fa-clipboard.index-icon
+            = link_to '詳細',"/products/#{style.id}",class:"stylename"
 
     
