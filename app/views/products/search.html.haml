@@ -1,0 +1,6 @@
+.search-products-contents
+  .sasasa
+    - @products.each do |product|
+      .one-search-product
+        = video_tag product.video_url.to_s,loop: true, controls: true, width: 250 
+        = link_to '詳細',"/products/#{product.id}",class:"stylename"
