@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
 
   def index
     # @products = Product.includes(:user).order("created_at DESC")    
+    @bob = Product.where(stylegenre_id: 1)
 
     @bob_style =  Product.where(stylegenre_id: 1).order("id DESC").limit(3)
     @short_style = Product.where(stylegenre_id: 2).order("id DESC").limit(3)
