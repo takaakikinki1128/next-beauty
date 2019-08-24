@@ -6,8 +6,12 @@
     height:150vh;
     padding-top:30px;
     .one-search-product{
-      padding:40px;
       display: inline-block;
+      margin:10px 20px;
+      padding:20px 10px 20px 10px;
+      box-shadow: 3px 3px rgba(0,0,0,0.4);
+      border: 1px solid #000000;
+      background: #fff;
     }
     .page_tag{
       text-align: center;

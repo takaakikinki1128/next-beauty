@@ -1,6 +1,6 @@
 .pickup-contents{
   background: #f2f4f8;
-  height:250vh;
+  height:450vh;
   width: 100%;
   font-family: 'Times New Roman', Times, serif;
   .pickup-title{
@@ -12,32 +12,133 @@
     }
   }
   .genres-link{
-    text-align: center;
-    font-size:25px;
+    
     .bob-style{
       padding-top:20px;
+      text-align: center;
+      font-size:25px;
+    }
+    .bob-contents{
+      .one-index-contents{
+        display: inline-block;
+        margin:10px 20px;
+        padding:20px 10px 20px 10px;
+        box-shadow: 3px 3px rgba(0,0,0,0.4);
+        border: 1px solid #000000;
+        background: #fff;
+        .shop_name-index{
+          font-size:20px;
+        }
+      }
     }
     .short-style{
       padding-top:20px;
+      text-align: center;
+      font-size:25px;
+    }
+    .short-contents{
+      .one-index-contents{
+        display: inline-block;
+        margin:10px 20px;
+        padding:20px 10px 20px 10px;
+        box-shadow: 3px 3px rgba(0,0,0,0.4);
+        border: 1px solid #000000;
+        background: #fff;
+        .shop_name-index{
+          font-size:20px;
+        }
+      }
     }
     .mid-style{
       padding-top:20px;
+      text-align: center;
+      font-size:25px;
+    }
+    .mid-contents{
+      .one-index-contents{
+        display: inline-block;
+        margin:10px 20px;
+        padding:20px 10px 20px 10px;
+        box-shadow: 3px 3px rgba(0,0,0,0.4);
+        border: 1px solid #000000;
+        background: #fff;
+        .shop_name-index{
+          font-size:20px;
+        }
+      }
     }
     .semlong-style{
       padding-top:20px;
+      text-align: center;
+      font-size:25px;
+    }
+    .semlong-contents{
+      .one-index-contents{
+        display: inline-block;
+        margin:10px 20px;
+        padding:20px 10px 20px 10px;
+        box-shadow: 3px 3px rgba(0,0,0,0.4);
+        border: 1px solid #000000;
+        background: #fff;
+        .shop_name-index{
+          font-size:20px;
+        }
+      }
     }
     .long-style{
       padding-top:20px;
+      text-align: center;
+      font-size:25px;
+    }
+    .long-contents{
+      .one-index-contents{
+        display: inline-block;
+        margin:10px 20px;
+        padding:20px 10px 20px 10px;
+        box-shadow: 3px 3px rgba(0,0,0,0.4);
+        border: 1px solid #000000;
+        background: #fff;
+        .shop_name-index{
+          font-size:20px;
+        }
+      }
     }
     .superlong-style{
       padding-top:20px;
+      text-align: center;
+      font-size:25px;
+    }
+    .superlong-contents{
+      .one-index-contents{
+        display: inline-block;
+        margin:10px 20px;
+        padding:20px 10px 20px 10px;
+        box-shadow: 3px 3px rgba(0,0,0,0.4);
+        border: 1px solid #000000;
+        background: #fff;
+        .shop_name-index{
+          font-size:20px;
+        }
+      }
     }
     .hairset-style{
       padding-top:20px;
+      text-align: center;
+      font-size:25px;
     }
-    .stylename{
-      font-size:18px;
-
+    .hairset-contents{
+      .one-index-contents{
+        display: inline-block;
+        margin:10px 20px;
+        padding:20px 10px 20px 10px;
+        box-shadow: 3px 3px rgba(0,0,0,0.4);
+        border: 1px solid #000000;
+        background: #fff;
+        .shop_name-index{
+          font-size:20px;
+        }
+      }
     }
+    
   }
 }

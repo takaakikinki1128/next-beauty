@@ -5,7 +5,12 @@
   .sasasa
     - @products.each do |product|
       .one-search-product
-        = video_tag product.video_url.to_s,loop: true, controls: true, width: 250 
-        = link_to '詳細',"/products/#{product.id}",class:"stylename"
+        .shop_name-searchproduct
+          店名：
+          = product.shop_name
+        .video-searchproduct
+          = video_tag product.video_url.to_s,loop: true, controls: true, width: 300
+        %i.far.fa-clipboard.show-second-icon
+          = link_to '詳細',"/products/#{product.id}",class:"stylename"
     .page_tag
       = paginate(@products)
