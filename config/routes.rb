@@ -12,7 +12,11 @@ Rails.application.routes.draw do
     end
   end
   resources :items, only: [:create]
-  resources :stylegenres,  only:[:show]  
+  resources :stylegenres,  only:[:index,:show] do
+    collection do
+      get 'search'
+    end
+  end
     
 
 

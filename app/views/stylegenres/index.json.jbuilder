@@ -1,5 +1,5 @@
-json.array! @styles do |style|
-  json.name style.name
-  json.id style.id
+json.array! @genres do |genre|
+  json.name genre.name
+  json.id genre.id
 
 end
