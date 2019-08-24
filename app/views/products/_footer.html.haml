@@ -1,0 +1,12 @@
+.app-banner
+  .footer-new
+    -if user_signed_in?
+      = link_to new_product_path, class: "footer-new-btn" do
+        .footer-new-btn__text
+          掲載する
+        %i.fas.fa-video.footer-btn__icon
+    -else
+      = link_to new_user_session_path, class: "footer-new-btn" do
+        .footer-new-btn__text
+          掲載する
+        %i.fas.fa-video.footer-btn__icon
