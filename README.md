@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Name
+====
+next-beauty
 
-Things you may want to cover:
+Overview
+美容師の技術動画のシェアアプリ
+## Description
 
-* Ruby version
+*お店の名前、紹介文、動画、パーマ、カラー、コスメ、スタイリスト名、アイロンなどのアイテムを投稿。
 
-* System dependencies
+*掲載者は自分が掲載した物を削除、編集をできる。
 
-* Configuration
+*ログイン、新規登録することができる。
+（ログイン、新規登録していなくても観覧することはできるが、それ以外はできない）
 
-* Database creation
+*自分が掲載したものはマイページで観覧できる。
+また他のユーザーのマイページも観覧できる。
 
-* Database initialization
+*ボブ、ショートなどスタイル検索できる
 
-* How to run the test suite
+*トップページは各スタイルの動画を３つピックアップして表示
 
-* Services (job queues, cache servers, search engines, etc.)
+*全ての動画（スタイル一覧）一覧を表示できる
 
-* Deployment instructions
-
-* ...
+*ユーザー検索できる
