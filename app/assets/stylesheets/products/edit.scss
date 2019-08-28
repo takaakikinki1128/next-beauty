@@ -1,12 +1,42 @@
 .edit-contents{
   background: #f2f4f8;
-  height:100vh;
+  height:150vh;
   width: 100%;
   .edit-one{
     text-align: center;
     padding-top:20px;
     h3{
       font-size:25px;
+    }
+    #product_video-error{
+      color: red;
+    }
+    #product_shop_name-error{
+      color: red;
+    }
+    #product_text-error{
+      color:red;
+    }
+    #product_stylest_name-error{
+      color:red;
+    }
+    #product_cosme-error{
+      color:red;
+    }
+    #product_link_url-error{
+      color:red;
+    }
+    #stylegenre_id-error{
+      color:red;
+    }
+    #item_id-error{
+      color:red;
+    }
+    #color_id-error{
+      color:red;
+    }
+    #perm_id-error{
+      color:red;
     }
     .edit-form{
       padding-top:20px;

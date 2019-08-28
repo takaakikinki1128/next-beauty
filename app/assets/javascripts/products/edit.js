@@ -1,5 +1,7 @@
 $(function(){
-  $("#new_product").validate({
+  var edit_id = $('.edit_product').attr("id");
+
+  $("#" + edit_id).validate({
     rules : {
       "product[shop_name]": {
         required: true
@@ -13,6 +15,9 @@ $(function(){
       "product[stylest_name]": {
         required: true
       },
+      "product[cosme]": {
+        required: true
+      },
       "stylegenre_id": {
         required: true
       },
@@ -23,9 +28,6 @@ $(function(){
         required: true
       },
       "perm_id": {
-        required: true
-      },
-      "product[cosme]": {
         required: true
       },
       "product[link_url]": {
@@ -45,6 +47,9 @@ $(function(){
       "product[stylest_name]":{
         required: "入力してください"
       },
+      "product[cosme]":{
+        required: "入力してください"
+      },
       "stylegenre_id":{
         required: "入力してください"
       },
@@ -57,9 +62,6 @@ $(function(){
       "perm_id":{
         required: "入力してください"
       },
-      "product[cosme]":{
-        required: "入力してください"
-      },
       "product[link_url]":{
         required: "入力してください"
       },
@@ -67,35 +69,36 @@ $(function(){
     errorPlacement: function(error, element) {
       if(element.attr("name")=="product[shop_name]")
       {
-        error.insertAfter(".error-new-1");	
+        error.insertAfter(".error-edit-1");	
       }
       else if(element.attr("name")=="product[text]") {
-        error.insertAfter(".error-new-2");
+        error.insertAfter(".error-edit-2");
       }
       else if(element.attr("name")=="product[video]") {
-        error.insertAfter(".error-new-3");
+        error.insertAfter(".error-edit-3");
       }
       else if(element.attr("name")=="product[stylest_name]") {
-        error.insertAfter(".error-new-4");
+        error.insertAfter(".error-edit-4");
       }
       else if(element.attr("name")=="stylegenre_id") {
-        error.insertAfter(".error-new-5");
+        error.insertAfter(".error-edit-7");
       }
       else if(element.attr("name")=="item_id") {
-        error.insertAfter(".error-new-6");
+        error.insertAfter(".error-edit-8");
       }
       else if(element.attr("name")=="color_id") {
-        error.insertAfter(".error-new-7");
+        error.insertAfter(".error-edit-9");
       }
       else if(element.attr("name")=="perm_id") {
-        error.insertAfter(".error-new-8");
-      }
-      else if(element.attr("name")=="product[cosme]") {
-        error.insertAfter(".error-new-9");
+        error.insertAfter(".error-edit-10");
       }
       else if(element.attr("name")=="product[link_url]") {
-        error.insertAfter(".error-new-10");
+        error.insertAfter(".error-edit-6");
       }
+      else if(element.attr("name")=="product[cosme]") {
+        error.insertAfter(".error-edit-5");
+      }
+     
       else{
         error.insertAfter(element);	
       }
