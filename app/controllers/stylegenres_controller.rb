@@ -2,7 +2,7 @@ class StylegenresController < ApplicationController
   def show
     genre = Stylegenre.find(params[:id])
     @name = genre.name
-    @products = genre.products.page(params[:page]).per(9).order("created_at DESC")
+    @products = genre.products.includes(:stylegenre).page(params[:page]).per(9).order("created_at DESC")
   end
 
   def search

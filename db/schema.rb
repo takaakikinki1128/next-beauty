@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_26_050337) do
+ActiveRecord::Schema.define(version: 2019_08_31_140227) do
 
   create_table "colors", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2019_08_26_050337) do
     t.string "cosme"
     t.integer "stylegenre_id"
     t.string "link_url"
-    t.string "video"
+    t.text "video"
   end
 
   create_table "stylegenres", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
