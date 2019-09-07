@@ -47,8 +47,15 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+# production:
+#   <<: *default
+#   database: next-beauty_production
+#   username: next-beauty
+#   password: <%= ENV['NEXT-BEAUTY_DATABASE_PASSWORD'] %>
+
 production:
   <<: *default
   database: next-beauty_production
-  username: next-beauty
-  password: <%= ENV['NEXT-BEAUTY_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
