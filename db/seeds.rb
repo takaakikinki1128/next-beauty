@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#アイテム
+Item.create(name: 'ストレートアイロン')
+Item.create(name: 'コテ32mm')
+Item.create(name: 'コテ28mm')
+Item.create(name: 'コテ18mm')
+Item.create(name: 'コテ16mm')
+Item.create(name: 'ヘアゴム')
+Item.create(name: 'なし')
+
+#カラー
+
