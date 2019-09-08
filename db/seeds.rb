@@ -16,4 +16,34 @@ Item.create(name: 'ヘアゴム')
 Item.create(name: 'なし')
 
 #カラー
+Color.create(name:'アッシュ系')
+Color.create(name:'ブラウン系')
+Color.create(name:'レッド系')
+Color.create(name:'マット系')
+Color.create(name:'バイオレット系')
+Color.create(name:'イエロー系')
+Color.create(name:'オレンジ系')
+Color.create(name:'なし')
+
+#パーマ
+Perm.create(name:'ホットパーマ')
+Perm.create(name:'コールドパーマ')
+Perm.create(name:'なし')
+
+#スタイルジャンル
+Stylegenre.create(name:'ボブ')
+Stylegenre.create(name:'ショート')
+Stylegenre.create(name:'ミディアム')
+Stylegenre.create(name:'ロング')
+Stylegenre.create(name:'セミロング')
+Stylegenre.create(name:'スーパーロング')
+Stylegenre.create(name:'ヘアセット')
+
+
+
+
+
+
+
+
 
