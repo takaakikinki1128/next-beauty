@@ -47,56 +47,28 @@
           %option{value: 3} コテ28mm
           %option{value: 4} コテ18mm
           %option{value: 5} コテ16mm
-          %option{value: 6} ロールブラシ
-          %option{value: 7} デンマンブラシ
-          %option{value: 8} ドライヤー
-          %option{value: 9} クルクルドライヤー
-          %option{value: 10} Uピンorアメピン
-          %option{value: 11} ヘアゴム         
-          %option{value: 12} なし 
+          %option{value: 6} ヘアゴム         
+          %option{value: 7} なし 
       .error-new-6
       .new-item-form
         = f.label :カラー（必須）,class:"select-label"
         %select.items-select-box{name: "color_id"}
           %option{value: ""} ----
-          %option{value: 1} 12LV；アッシュ系
-          %option{value: 2} 10LV；アッシュ系
-          %option{value: 3} 8LV；アッシュ系
-          %option{value: 4} 6LV；アッシュ系
-          %option{value: 5} 12LV；バイオレッド系
-          %option{value: 6} 10LV；バイオレッド系
-          %option{value: 7} 8LV；バイオレッド系
-          %option{value: 8} 6LV；バイオレッド系
-          %option{value: 9} 12LV；イエロー系
-          %option{value: 10} 10LV；イエロー系
-          %option{value: 11} 8LV；イエロー系
-          %option{value: 12} 6LV；イエロー系
-          %option{value: 13} 12LV；ピンク系
-          %option{value: 14} 10LV；ピンク系
-          %option{value: 15} 8LV；ピンク系
-          %option{value: 16} 6LV；ピンク系
-          %option{value: 17} 12LV；レッド系
-          %option{value: 18} 10LV；レッド系
-          %option{value: 19} 8LV；レッド系
-          %option{value: 20} 6LV；レッド系
-          %option{value: 21} 12LV；ブラウン系
-          %option{value: 22} 10LV；ブラウン系
-          %option{value: 23} 8LV；ブラウン系
-          %option{value: 24} 6LV；ブラウン系
-          %option{value: 25} 4LV；ブラウン系
-          %option{value: 26} 2LV；ブラウン系
-          %option{value: 27} 12LV；マット系
-          %option{value: 28} 10LV；マット系
-          %option{value: 29} 8LV；マット系
-          %option{value: 30} 6LV；マット系
-          %option{value: 31} なし
+          %option{value: 1} アッシュ系
+          %option{value: 2} ブラウン系
+          %option{value: 3} レッド系
+          %option{value: 4} マット系
+          %option{value: 5} バイオレッド系
+          %option{value: 6} イエロー系
+          %option{value: 7} オレンジ系
+          %option{value: 8} なし
       .error-new-7
       .new-item-form
         = f.label :パーマ（必須）,class:"select-label"
         %select.items-select-box{name: "perm_id"}
           %option{value: ""} ----
-          %option{value: 1} ホットパーマ(デジパなど)
-          %option{value: 2} コールドパーマ(水パなど)
+          %option{value: 1} ホットパーマ
+          %option{value: 2} コールドパーマ
           %option{value: 3} なし
       .error-new-8
       .actions-new

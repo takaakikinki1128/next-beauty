@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_07_074912) do
+ActiveRecord::Schema.define(version: 2019_09_08_071424) do
 
   create_table "colors", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2019_09_07_074912) do
   create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.text "text", null: false
+    t.string "image", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -34,19 +35,20 @@ ActiveRecord::Schema.define(version: 2019_09_07_074912) do
   end
 
   create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name"
     t.text "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "video"
     t.string "shop_name"
     t.integer "user_id"
     t.integer "item_id"
     t.integer "color_id"
     t.integer "perm_id"
-    t.string "stylest_name"
     t.string "cosme"
     t.integer "stylegenre_id"
     t.string "link_url"
-    t.string "video"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "stylest_name"
   end
 
   create_table "stylegenres", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
