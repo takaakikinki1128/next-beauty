@@ -6,6 +6,7 @@ class StylegenresController < ApplicationController
   end
 
   def search
+    
   end
 
   def index
