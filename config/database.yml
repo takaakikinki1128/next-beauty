@@ -53,6 +53,7 @@ test:
 #   username: next-beauty
 #   password: <%= ENV['NEXT-BEAUTY_DATABASE_PASSWORD'] %>
 
+
 production:
   <<: *default
   database: next-beauty_production
