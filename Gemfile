@@ -81,6 +81,8 @@ gem 'carrierwave'
 gem "dropzonejs-rails"
 gem 'devise'
 gem 'rspec-rails'
+gem 'fog-aws'
+
 
 group :production do
   gem 'unicorn', '5.4.1'
