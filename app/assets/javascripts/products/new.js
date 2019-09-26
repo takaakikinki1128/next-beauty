@@ -7,6 +7,9 @@ $(function(){
       "product[text]": {
         required: true
       },
+      "product[title]": {
+        required: true
+      },
       "product[video]": {
         required: true
       },
@@ -42,6 +45,9 @@ $(function(){
       "product[video]":{
         required: "入力してください"
       },
+      "product[title]":{
+        required: "入力してください"
+      },
       "product[stylest_name]":{
         required: "入力してください"
       },
@@ -74,6 +80,9 @@ $(function(){
       }
       else if(element.attr("name")=="product[video]") {
         error.insertAfter(".error-new-3");
+      }
+      else if(element.attr("name")=="product[title]") {
+        error.insertAfter(".error-new-11");
       }
       else if(element.attr("name")=="product[stylest_name]") {
         error.insertAfter(".error-new-4");
