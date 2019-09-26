@@ -4,7 +4,7 @@
       ピックアップスタイル
   .genres-link
     .bob-style
-      ボブ
+      = link_to "ボブ","/stylegenres/1"
     .bob-contents
       - @bob_style.each do |style|
         .one-index-contents
@@ -16,7 +16,7 @@
           %i.far.fa-clipboard.index-icon
             = link_to '詳細',"/products/#{style.id}"
     .short-style
-      ショート
+      = link_to "ショート","/stylegenres/2"
     .short-contents
       - @short_style.each do |style|
         .one-index-contents
@@ -28,7 +28,8 @@
           %i.far.fa-clipboard.index-icon
             = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .mid-style
-      ミディアム
+      = link_to "ミディアム","/stylegenres/3"
+
     .mid-contents
       - @mid_style.each do |style|
         .one-index-contents
@@ -40,7 +41,8 @@
           %i.far.fa-clipboard.index-icon
             = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .semlong-style
-      セミロング
+      = link_to "セミロング","/stylegenres/4"
+
     .semlong-contents
       - @semlong_style.each do |style|
         .one-index-contents
@@ -52,7 +54,8 @@
           %i.far.fa-clipboard.index-icon
             = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .long-style
-      ロング
+      = link_to "ロング","/stylegenres/5"
+
     .long-contents
       - @long_style.each do |style|
         .one-index-contents
@@ -64,7 +67,8 @@
           %i.far.fa-clipboard.index-icon
             = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .superlong-style
-      スーパーロング
+      = link_to "スーパーロング","/stylegenres/6"
+
     .superlong-contents
       - @superlong_style.each do |style|
         .one-index-contents
@@ -76,7 +80,8 @@
           %i.far.fa-clipboard.index-icon
             = link_to '詳細',"/products/#{style.id}",class:"stylename"
     .hairset-style
-      ヘアセット
+      = link_to "ヘアセット","/stylegenres/7"
+
     .hairset-contents
       - @hairset_style.each do |style|
         .one-index-contents
