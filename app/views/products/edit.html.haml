@@ -3,6 +3,10 @@
     .edit-one
       %h3 編集する
       .edit-form
+        = f.label :タイトル（必須）,class:"edit-label"
+        = f.text_field :title,class:"edit-text-box"
+      .error-edit-11
+      .edit-form
         = f.label :店名（必須）,class:"edit-label"
         = f.text_field :shop_name,class:"edit-text-box"
       .error-edit-1

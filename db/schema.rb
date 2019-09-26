@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_08_075156) do
+ActiveRecord::Schema.define(version: 2019_09_26_015947) do
 
   create_table "colors", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 2019_09_08_075156) do
   end
 
   create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name"
     t.text "text"
     t.string "video"
     t.string "shop_name"
@@ -45,6 +44,7 @@ ActiveRecord::Schema.define(version: 2019_09_08_075156) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "stylest_name"
+    t.string "title"
   end
 
   create_table "stylegenres", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

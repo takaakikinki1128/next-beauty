@@ -3,6 +3,10 @@
     = form_for @product do |f|
       %h3 掲載する
       .new-form
+        = f.label :タイトル（必須）,class:"out-label"
+        = f.text_field :title,class:"text-box"
+      .error-new-11
+      .new-form
         = f.label :店名（必須）,class:"out-label"
         = f.text_field :shop_name,class:"text-box"
       .error-new-1

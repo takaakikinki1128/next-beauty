@@ -1,12 +1,15 @@
 .edit-contents{
   background: #f2f4f8;
-  height:150vh;
+  height:170vh;
   width: 100%;
   .edit-one{
     text-align: center;
     padding-top:20px;
     h3{
       font-size:25px;
+    }
+    #product_title-error{
+      color:red;
     }
     #product_video-error{
       color: red;

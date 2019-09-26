@@ -1,6 +1,6 @@
 .product-new-contents{
   background: #f2f4f8;
-  height:150vh;
+  height:170vh;
   width: 100%;
   .one-new-product{
     text-align: center;
@@ -57,6 +57,9 @@
         width:100px;
         height:30px;
       }
+    }
+    #product_title-error{
+      color:red;
     }
     #product_shop_name-error{
       color:red;

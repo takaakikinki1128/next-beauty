@@ -11,6 +11,9 @@
         = link_to '削除', "/products/#{@product.id}", method: :delete,class:"tweet_show-delete"
     %ul.list-show
       %li
+        タイトル　：
+        = @product.title
+      %li
         説明文　：
         = @product.text
       %li
